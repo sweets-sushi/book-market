@@ -1,0 +1,46 @@
+.header-list li {
+  list-style: none;
+  float:left;
+  padding: 33px 20px 33px 20px;
+  color: white;
+
+}
+
+.header-list a {
+  color:white;
+  display:block;
+}
+
+
+
+.header {
+  background-color: #33CC66;
+  height: 90px;
+
+
+}
+
+.header-logo {
+  font-size: 40px;
+  float:left;
+  padding: 20px 40px 20px 40px;
+  color: #FFF;
+}
+
+
+
+
+.main {
+  background-color: #e6e6fa
+  height: 800px;
+
+}
+
+.footer {
+  background-color: #ceccf3;
+  height: 270px;
+}
+
+.footer li {
+ list-style: none;
+}
