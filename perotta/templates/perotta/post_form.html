@@ -1,0 +1,23 @@
+{% extends 'perotta/base.html' %}
+
+{% block content %}
+<form action="" method="POST">
+  <table class="table mb-3">
+    <tr>
+      <th>タイトル</th> <p>本が直接特定できそうな情報は入力しないでください。(※著者名、本のタイトルなど) 本からあなたの思いやどんな変化が生じたが教えてくださいね！</P>
+      <td>{{ form.title }}</td>
+    </tr>
+    <tr>
+      <th>本文</th>
+      <td>{{ form.text }}</td>
+    </tr>
+    <tr>
+      <th>出品日</th>
+      <td>{{ form.created_at }}</td>
+    </tr>
+ </table>
+
+<button type ="submit" class="btn btn-primary">送信</button>
+{% csrf_token %}
+</form>
+{% endblock %}

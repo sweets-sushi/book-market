@@ -5,4 +5,6 @@ app_name = 'perotta'
 
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
+    path('add/', views.add, name='add'),
+    
 ]
