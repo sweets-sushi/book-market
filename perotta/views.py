@@ -30,3 +30,8 @@ def add(request):
 
     }
     return render(request, 'perotta/post_form.html', context)
+
+# landing_pageを見せる。
+class TemplateView(generic.TemplateView):
+
+    template_name = 'perotta/landing_page.html'

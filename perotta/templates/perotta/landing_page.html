@@ -1,0 +1,80 @@
+<!doctype html>
+{% load static %}
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/landing_page.css' %}">
+    <title> Perottaにようこそ</title>
+  </head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+    <a href="{% url 'perotta:index' %}"> <img src="{% static 'images/IMG_6757.JPG' %}" class="nav-logo"> </a>
+    <ul>
+      <li>
+         <a href="{% url 'perotta:index' %}" class="btn-gradient-radius">本を探しに行く</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main">
+  <div class="wrapper">
+   <div class="container">
+    <h1>心に触れるストーリーをあなたに運び続ける。</h1>
+    <h2>To Carry Heart-Touching Stories.</h2>
+    <p>ストーリーは時として、心を動かしたり、あなたの人生を変えてしまうことだってあります。</p>
+    <p>背中を押したり、辛い時間を乗り越える活力を与えるストーリーを届けたい。</p>
+
+   </div>
+  </div>
+  <div class="text-wrapper">
+    <div class='section-heading'>
+      <h2>Perottaってどんなサービスなの？</h2>
+      <div class='secton-text'>
+        <p>Perottaは本の売買を通して、新たな人と素敵な本に出会えるフリマサービスです。Perottaではあなたに良い本に出会ってもらうことはもちろん、
+          出品者の本から生まれたエモいストーリーを直接会って聞いてもらいます。そうすることで、購入者は出品者の
+          ストーリーを踏まえ、本自体をより深い視点から楽しむことができます。あなたの人生を変えてくれた本を、また違う誰かの人生を変えるために出品して
+          みませんか？
+        </p>
+
+      </div>
+
+
+    </div>
+
+    <div class ="text-container">
+      <h2>良い本との出会いを促すための取り決め</h2>
+        <ul>
+          <li>出品する際は、本のタイトル、著者名は伏せましょう。本は届くまでのお楽しみ！</li>
+          <li>出品する際の値段は500円均一</li>
+          <li>購入の基準は出品者の本に対する思いやそこから生まれた体験談だけ！</li>
+          <li>購入された際は、できるだけ直接会って届けてください。本を通して、人に出会ってください！あなたの本から生まれたストーリーを伝えてください</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="footer">
+<div class="footer-list">
+  <ul>
+    <li>お問い合わせ:perotta@gmail.com</li>
+    <li> Twitter: @sweets_sushi</li>
+
+  </ul>
+</div>
+
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

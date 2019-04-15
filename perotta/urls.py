@@ -4,7 +4,8 @@ from . import views
 app_name = 'perotta'
 
 urlpatterns = [
-    path('', views.IndexView.as_view(), name='index'),
+    path('', views.TemplateView.as_view(), name='landing'),
+    path('home/', views.IndexView.as_view(), name='index'),
     path('add/', views.add, name='add'),
-    
+
 ]
