@@ -8,6 +8,7 @@ from .forms import SellBookForm
 class IndexView(generic.ListView):
 
     model = Post
+    paginate_by = 5
 
     def get_queryset(self):
         return Post.objects.order_by('-created_at')
@@ -35,3 +36,7 @@ def add(request):
 class TemplateView(generic.TemplateView):
 
     template_name = 'perotta/landing_page.html'
+
+
+class DetailView(generic.DetailView):
+    model = Post
